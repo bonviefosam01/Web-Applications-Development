@@ -1,0 +1,28 @@
+{% extends "socialnetwork/base.html" %}
+
+{% block content %}
+    <div class = "id_register_link" id = "id_register_link">
+        <a id = "id_nav_global_stream" href="{% url 'stream' %}">Global Stream</a>
+        <a id = "id_nav_profile" href="{% url 'profile' %}">{{ user.first_name }} {{ user.last_name }}</a>
+        <a id = "id_nav_follower_stream" href="{% url 'follower_stream' %}">Followers Stream</a>
+        <a id = "id_nav_logout" href="{% url 'logout' %}">Logout</a>
+    </div>
+
+    <div class = "id_page_name" id = "id_page_name">Follower Stream</div>
+
+    <div id="my-posts-go-here">
+        <div id="my-comments-go-here-for-post"></div>
+    </div>
+
+    <div id = "error"></div>
+
+    <script>
+        //loadPosts()
+        // Call getList() as soon as page is finished loading to display the todolist
+        window.onload = loadfollowerPosts;
+
+        // ... also call getList every 5 seconds hereafter to update the list
+        window.setInterval(loadfollowerPosts, 5000);
+
+    </script>
+{% endblock %}
