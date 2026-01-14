@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Wordish</title>
+        <link rel="stylesheet" href="css/wordish.css">
+        <script src="js/wordish.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Wordish the Game</h1>
+        <div id="status" class="status">
+            Welcome to Wordish
+        </div>
+
+        <div class = "grid">
+            <div id="cell_0_0" class = "cell"></div>
+            <div id="cell_0_1" class = "cell"></div>
+            <div id="cell_0_2" class = "cell"></div>
+            <div id="cell_0_3" class = "cell"></div>
+            <div id="cell_0_4" class = "cell"></div>
+
+            <div id="cell_1_0" class = "cell"></div>
+            <div id="cell_1_1" class = "cell"></div>
+            <div id="cell_1_2" class = "cell"></div>
+            <div id="cell_1_3" class = "cell"></div>
+            <div id="cell_1_4" class = "cell"></div>
+
+            <div id="cell_2_0" class = "cell"></div>
+            <div id="cell_2_1" class = "cell"></div>
+            <div id="cell_2_2" class = "cell"></div>
+            <div id="cell_2_3" class = "cell"></div>
+            <div id="cell_2_4" class = "cell"></div>
+
+            <div id="cell_3_0" class = "cell"></div>
+            <div id="cell_3_1" class = "cell"></div>
+            <div id="cell_3_2" class = "cell"></div>
+            <div id="cell_3_3" class = "cell"></div>
+            <div id="cell_3_4" class = "cell"></div>
+
+            <div id="cell_4_0" class = "cell"></div>
+            <div id="cell_4_1" class = "cell"></div>
+            <div id="cell_4_2" class = "cell"></div>
+            <div id="cell_4_3" class = "cell"></div>
+            <div id="cell_4_4" class = "cell"></div>
+
+            <div id="cell_5_0" class = "cell"></div>
+            <div id="cell_5_1" class = "cell"></div>
+            <div id="cell_5_2" class = "cell"></div>
+            <div id="cell_5_3" class = "cell"></div>
+            <div id="cell_5_4" class = "cell"></div>
+        </div> 
+
+        <div class = "target_word">
+            <label for="target_text">Target Word: </label>
+            <input id="target_text" name="target_text" type="text">
+            <button onclick="startGame()" id= "start_button">Start</button>
+        </div>
+
+        <div class = "guess_word">
+            <label for="guess_text">Guess: </label>
+            <input id="guess_text" name="guess_text" type="text">
+            <button onclick = "guessWord()" id= "guess_button" name="guess_button" type="submit">Submit</button>
+        </div>
+    </body>
+</html>

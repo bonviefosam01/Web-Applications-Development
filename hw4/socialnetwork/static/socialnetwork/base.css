@@ -1,0 +1,171 @@
+@keyframes wave-text {
+    0%, 100% {
+        text-shadow: 2px 2px 0px blue;
+    }
+    25% {
+        text-shadow: -2px 2px 0px red;
+    }
+    50% {
+        text-shadow: 2px -2px 0px green;
+    }
+    75% {
+        text-shadow: -2px -2px 0px purple;
+    }
+}
+
+.body{
+    background-color: beige;
+}
+
+
+.id_site_name{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 25px 70px;
+    background-color: teal;
+    color: silver;
+    animation: wave-text 1s infinite alternate;
+}
+
+.id_header_div {
+    background-color: beige;
+}
+
+.id_page_name{
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.id_register_link, .id_login_link{
+    text-align:right;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.id_post_input_text, .id_comment_input_text_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.id_post_input_text input, .id_comment_input_text_1 input, input{
+    width: 500px;
+    height: 1px;
+    padding: 20px;
+    font-size: large;
+}
+
+.id_post_div_1 {
+    vertical-align: baseline;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.id_post_profile_1, .id_post_date_time_1, .id_comment_profile_1, .id_comment_date_time_1 {
+    font-style: italic !important;
+}
+
+.id_comment_div_1 {
+    margin-left: 40px;
+    size: large;
+    width: 100%;
+    padding:20px;
+}
+
+
+button {
+    font-size: x-large;
+    padding: 3px;
+}
+
+
+
+.user-info {
+    text-align: right;
+    font-family: sans-serif; 
+    padding-right: 10px;
+    font-size: x-large;
+}
+
+.message {
+    color:blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    padding: 25px 50px;
+}
+
+.search-bar {
+    text-align: center;
+    padding: 25px 50px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: sans-serif;
+    font-size: x-large;
+    padding: 25px 50px;
+}
+
+.error {
+    color:red;
+}
+
+.list {
+    padding: 3px;
+}
+
+
+
+.list-link:hover {
+     background-color:lightgray;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+}
+
+a {
+     text-decoration: none;
+     color:black;
+}
+
+.navlink {
+    background-color: lightgray;
+}
+
+.letter {
+    padding: 3px;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.letter:hover {
+     background-color:lightgray;
+}

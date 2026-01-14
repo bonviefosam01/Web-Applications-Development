@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Wordish</title>
+        <link rel="stylesheet" href="/static/wordish/index.css">
+    </head>
+    <body>
+            <h1>Wordish the Game</h1>
+            <div id="message" class="message">
+                {{ message }}
+            </div>
+
+            <form action = "/" method="POST">
+                <span>Target Word: </span>
+                <input id="target_text" name="target_text" type="text">
+                <button id= "start_button">Start</button>
+                {% csrf_token %}
+            </form>
+
+            
+    </body>
+</html>

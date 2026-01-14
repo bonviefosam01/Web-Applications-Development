@@ -1,0 +1,73 @@
+.status {
+    background-color: lightgrey;
+    margin: auto;
+    text-align: center;
+    line-height: 10px;
+    font-size: 20px;
+    width: 400px;
+    height: 10px;
+    padding: 20px;
+
+    border: 30px;
+    border-color: white;
+    border-width:15px;
+    border-style: solid;
+}
+
+h1{
+    color: lightgreen;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    width: 450px;
+}
+
+div.grid{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+div.cell {
+    background-color:grey;
+
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+    text-align: center;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    
+}
+
+div.guess_word{
+    text-align: center;
+    font-size: 28px;
+}
+
+div.target_word{
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+}
+
+input{
+    font-size: medium;
+}
+
+label{
+    font-size: 18px;
+}
+
+button {
+    font-size: 14px;
+    padding: 15px 30px;
+}

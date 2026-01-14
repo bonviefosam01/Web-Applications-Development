@@ -1,0 +1,40 @@
+{% extends "socialnetwork/base.html" %}
+
+{% block content %}
+
+    <div class = "id_register_link" id = "id_register_link">
+        <a id = "id_nav_global_stream" href="{% url 'home' %}">Global Stream</a>
+        <a id = "id_nav_profile" href="{% url 'profile' %}"> {{ user.first_name }} {{ user.last_name }}</a>
+        <a id = "id_nav_follower_stream" href="{% url 'follower' %}">Followers</a>
+        <a id = "id_nav_logout" href="{% url 'logout' %}">Logout</a>
+    </div>
+
+    <div class = "id_page_name" id = "id_page_name">Global Stream</div>
+
+    <div class = "id_post_input_text">
+        <label for="id_post_input_text">New Post: </label>
+        <input id="id_post_input_text" name="id_post_input_text" type="text">
+        <button id= "id_post_button" name="id_post_button" type="submit">Submit</button>
+    </div>
+
+    <div class="id_post_div_1" id="id_post_div_1">
+        <a class = 'id_post_profile_1' id = 'id_post_profile_1' href = "{% url 'follower_page' %}">Post by Bonvie Fosam</a>
+        <span id = 'id_post_text_1'>- Today is a very sunny day - </span>
+        <span class = 'id_post_date_time_1' id = 'id_post_date_time_1'>2/10/2025 12:19 PM</span>
+
+        <div class = "id_comment_div_1" id = "id_comment_div_1">
+            <a class = 'id_comment_profile_1' id = 'id_comment_profile_1' href = "{% url 'follower_page' %}">Comment by Harry Styles</a>
+            <span id = 'id_comment_text_1'>- It is a nice day, but I like snow better. - </span>
+            <span class = 'id_comment_date_time_1' id = 'id_comment_date_time_1'>2/10/2025 1:35 PM</span>
+        </div>
+
+        <div class = "id_comment_input_text_1">
+            <label for="id_comment_input_text_1">Comment: </label>
+            <input id="id_comment_input_text_1"name="id_comment_input_text_1" type="text">
+            <button id= "id_comment_button_1" name="id_comment_button_1" type="submit">Submit</button>
+        </div>
+
+    </div>
+
+
+{% endblock %}
